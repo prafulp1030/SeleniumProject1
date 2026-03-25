@@ -28,4 +28,14 @@ public class LoginStep {
 		loginPage.enterUsername("prafulp1010@gmail.com");
 	}
 
+	@Given("user enter password")
+	public void user_enter_password() {
+		loginPage.enterPassword("Pr@ful0812");
+	}
+
+	@Given("User click on login button")
+	public void user_click_on_login_button() {
+		loginPage.clickOnLoginButton();
+	}
+
 }
