@@ -1,12 +1,12 @@
 package steps;
 
 import baseLayer.BaseTest;
-import io.cucumber.java.Before;
+import io.cucumber.java.BeforeAll;
 
 public class Hooks {
 
-	@Before
-	public void beforeScenario() {
+	@BeforeAll
+	public static void beforeScenario() {
 		BaseTest baseTest = new BaseTest();
 		baseTest.initialization();
 	}
